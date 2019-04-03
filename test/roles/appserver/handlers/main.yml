@@ -1,0 +1,7 @@
+---
+- name: restart_iptables
+  service: name=iptables state=restarted
+
+- name: restart_tomcat
+  service: name=tomcat state=restarted
+ 

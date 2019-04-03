@@ -1,0 +1,3 @@
+'appname': 'ntp'
+'service': 'ntpd'
+'user': 'user2'

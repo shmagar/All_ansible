@@ -1,0 +1,6 @@
+'appname1': 'httpd'
+'appname': 'ntp'
+'service': 'ntpd'
+'user': 'user2'
+'doc_root': '/var/www/html'
+'http_port': 8080
