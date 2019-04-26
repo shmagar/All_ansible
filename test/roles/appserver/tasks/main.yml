@@ -11,10 +11,10 @@
   become_method: sudo
 
 - name: Download Tomcat
-  get_url: url=https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz dest=/opt/apache-tomcat-8.5.35.tar.gz
+  get_url: url=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz dest=/opt/apache-tomcat-8.0.27.tar.gz
 
 - name: Extract archive
-  command: "tar -xvf /opt/apache-tomcat-8.5.35.tar.gz" 
+  command: "tar -xvf /opt/apache-tomcat-8.0.27.tar.gz" 
 
 - name: Symlink install directory
   file: src=/opt/apache-tomcat-8.5.35 path=/usr/share/tomcat state=link
