@@ -1,0 +1,8 @@
+---
+- hosts: 34.73.242.67
+  become: true
+  tasks:
+   - name: install httpd
+     yum: name=httpd state=present
+   - name: start service
+     service: name=httpd state=started
